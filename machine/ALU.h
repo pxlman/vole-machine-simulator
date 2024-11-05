@@ -3,11 +3,12 @@
 #include <cmath>
 #include <map>
 #include <iostream>
+#include <deque>
 using namespace std;
 
 class ALU {
 private:
-    float binToDec(const std::string& binary) {
+    float binToDec(const string& binary) {
         float decimal = 0;
         int length = binary.length();
 
@@ -19,6 +20,7 @@ private:
 
         return decimal;
     }
+
 
     string decimalToBinary(float number) {
         // Split the number into integer and fractional parts
@@ -129,64 +131,6 @@ private:
 
         return hex;
     }
-
-    /*string convertedBinToDec(string number) {
-
-
-        // Determine the sign of the number
-        int sign = (number[0] == '-') ? 1 : 0;
-
-        // Remove the sign from the number if it exists
-        if (sign) {
-            number = number.substr(1);
-        }
-
-        // Find the position of the radix point
-        size_t pointPosition = number.find('.');
-        if (pointPosition == string::npos) {
-            pointPosition = number.length();
-        }
-
-        // Find the first '1' in the binary string (for normalization)
-        size_t firstOne = number.find('1');
-        if (firstOne == string::npos) {
-            return "0"; // If there's no '1', the number is 0
-        }
-
-        // Calculate the exponent based on the position of the first '1'
-        int exponent = pointPosition - firstOne + 1; // Bias the exponent
-
-        string mantissa = number.substr(firstOne); // Include from the first '1'
-
-        // Remove the radix point from the mantissa, if present
-        size_t newPointPosition = mantissa.find('.');
-        if (newPointPosition != string::npos) {
-            mantissa.erase(newPointPosition, 1);
-        }
-        // Make sure the mantissa is limited to a certain number of bits (e.g., 4 bits for simplicity)
-        if (mantissa.length() > 4) {
-            mantissa = mantissa.substr(0, 4);
-        } else {
-            while (mantissa.length() < 4) {
-                mantissa += '0'; // Pad with zeros if needed
-            }
-        }
-
-        // Calculate the biased exponent
-        int bias = 4; // Assuming a bias of 4 for a 3-bit exponent
-        int exponentValue = exponent + bias;
-
-        // Convert the exponent to a 3-bit binary string
-        string exponentBinary = "";
-        for (int i = 2; i >= 0; --i) {
-            exponentBinary += ((exponentValue >> i) & 1) ? '1' : '0';
-        }
-
-        // Combine sign, exponent, and mantissa into the final binary representation
-        string normalizedBinary = (sign ? "1" : "0") + exponentBinary + mantissa;
-        return normalizedBinary;
-    }*/
-
 
     string convertedBinToDec(std::string number) {
         // Check if the number is negative and remove the sign if it exists
@@ -307,4 +251,85 @@ public:
         string twosHex = decToHex(res);
         reg.setReg(idx, (twosHex.length() == 2)? twosHex : "0" + twosHex);
     }
+// Function to convert from hex to binary
+string Hextobin(string Hex){
+    int dec = hextodec(Hex);
+    return decimalToBinary(dec);
+}
+
+void reverse(string hex, int& deg, int idx, Register &r) {
+
+    string bin = Hextobin(hex); // Converting hex to binary
+
+    deque<char> dq; // Creating a deque
+
+    // Pushing elements in the deque
+    for(int i = 0; i < bin.length(); i++) {
+        dq.push_back(bin[i]);
+    }
+    // Initializing an empty string
+    string reversed = "";
+
+    // Looping until degree equals 0 or dq is empty
+    while(deg != 0 && !dq.empty()) {
+        // Creating temporary var
+        char temp = dq.back();
+
+        // Adding the temp to the front of the string
+        reversed = temp + reversed;
+
+        // Popping the last elements in the dq
+        dq.pop_back();
+
+        // Decrementing deg
+        deg--;
+    }
+
+    // Appending the remaining elements in the dq to the string
+    while(!dq.empty()) {
+        reversed += dq.front();
+        dq.pop_front();
+    }
+
+    // Setting the register
+    r.setreg(binToHex(reversed),idx);
+}
+
+void ORing(string hex1, string hex2,int idx,Register &r) { // Bit wise ORing function
+    // Converting the numbers to binary
+    string bin1 = Hextobin(hex1);
+    string bin2 = Hextobin(hex2);
+
+    // ORing the bits of the two binary's together
+    int ans = stoi(bin1,nullptr,2) | stoi(bin2, nullptr,2);
+
+    // Setting the register
+    r.setregister(binToHex(to_string(ans)),idx);
+}
+
+void Anding(string hex1, string hex2, int idx, Register &r) {
+    // Converting the numbers to binary
+    string bin1 = Hextobin(hex1);
+    string bin2 = Hextobin(hex2);
+
+    // ANDing the bits of the two binary's together
+    int ans = stoi(bin1,nullptr,2) & stoi(bin2, nullptr, 2);
+
+    // Setting the register
+    r.setreg(binToHex(to_string(ans)),idx);
+}
+
+void Xoring(string hex1, string hex2, int idx, Register &r) {
+    // Converting the numbers to binary
+    string bin1 = Hextobin(hex1);
+    string bin2 = Hextobin(hex2);
+
+    // XORing the bits of the two binary's together
+    int ans = stoi(bin1,nullptr,2) ^ stoi(bin2, nullptr, 2);
+
+    // Setting the register
+    r.setreg(binToHex(to_string(ans)),idx);
+}
+
+
 };
