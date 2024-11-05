@@ -1,0 +1,16 @@
+QLineEdit {
+        color: #ECEFF4;
+}
+QPushButton {
+        background-color: #4C566A;
+        color: #e0def4;
+}
+QWidget {
+        background-color: #232136;
+        color: #e0def4;
+}
+QTableWidget {
+        background-color: #3B4252;
+        gridline-color: #4C566A;
+        color: #e0def4;
+}
