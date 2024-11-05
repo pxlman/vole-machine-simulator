@@ -7,6 +7,7 @@
 #include <map>
 #include <iostream>
 #include <deque>
+#include "machine/Register.h"
 using namespace std;
 
 class ALU {
@@ -23,7 +24,6 @@ private:
 
         return decimal;
     }
-
 
     string decimalToBinary(float number) {
         // Split the number into integer and fractional parts
@@ -75,51 +75,6 @@ private:
         }
         return binary;
     }
-    string FloatRep(int dec) {
-        string exponent;
-        string dectobin = decimalToBinary(dec);
-        int bias = 4; // Bias for the exponent
-        int sign = dectobin[0] == '1' ? 1 : 0;
-
-        // Extract the exponent (3 bits)
-        for (int i = 1; i <= 3; i++) {
-            exponent += dectobin[i];
-        }
-
-        // Extract the mantissa (4 bits)
-        string mantisa = "";
-        for (int i = 4; i < 8; i++) {
-            mantisa += dectobin[i];
-        }
-
-        // Calculate the actual mantissa value as a decimal
-        float mantissaValue = 0.0; // Start with explicit leading 0
-        for (int i = 0; i < mantisa.length(); i++) {
-            mantissaValue += (mantisa[i] - '0') * pow(2, -(i + 1)); // Binary fraction
-        }
-
-        // Convert exponent from binary to decimal
-        int exponentValue = stoi(exponent, nullptr, 2) - bias;
-
-        // Calculate the floating-point result
-        string result = to_string(pow(-1, sign) * mantissaValue * pow(2, exponentValue));
-
-        if(stof(result) > 7.5) {
-            result = to_string(7.5);
-        }
-        if(stof(result) < -7.5) {
-            result = to_string(-7.5);
-        }
-        // Convert result to string
-        return result;
-    }
-
-
-    /*
-    string XYValue(string hex){
-        return FloatRep(hextodec(hex));
-    }
-    */
 
     string binToHex(string &convertedbin) {
         string firstNibble = convertedbin.substr(0, 4);
@@ -260,8 +215,8 @@ string Hextobin(string Hex){
     return decimalToBinary(dec);
 }
 
-void reverse(string hex, int& deg, int idx, Register &r) {
-
+void reverse(int idx, int& deg, Register &r) {
+    string hex = r.getReg(idx);
     string bin = Hextobin(hex); // Converting hex to binary
 
     deque<char> dq; // Creating a deque
@@ -295,11 +250,12 @@ void reverse(string hex, int& deg, int idx, Register &r) {
     }
 
     // Setting the register
-    r.setreg(binToHex(reversed),idx);
+    r.setReg(idx, binToHex(reversed));
 }
 
-void ORing(string hex1, string hex2,int idx,Register &r) { // Bit wise ORing function
-    // Converting the numbers to binary
+void ORing(int id1, int id2,int idx,Register &r) { // Bit wise ORing function string hex1 = alu // Converting the numbers to binary
+    string hex1 = r.getReg(id1);
+    string hex2 = r.getReg(id2);
     string bin1 = Hextobin(hex1);
     string bin2 = Hextobin(hex2);
 
@@ -307,10 +263,12 @@ void ORing(string hex1, string hex2,int idx,Register &r) { // Bit wise ORing fun
     int ans = stoi(bin1,nullptr,2) | stoi(bin2, nullptr,2);
 
     // Setting the register
-    r.setregister(binToHex(to_string(ans)),idx);
+    r.setReg(idx, binToHex(to_string(ans)));
 }
 
-void Anding(string hex1, string hex2, int idx, Register &r) {
+void Anding(int id1, int id2, int idx, Register &r) {
+    string hex1 = r.getReg(id1);
+    string hex2 = r.getReg(id2);
     // Converting the numbers to binary
     string bin1 = Hextobin(hex1);
     string bin2 = Hextobin(hex2);
@@ -319,10 +277,12 @@ void Anding(string hex1, string hex2, int idx, Register &r) {
     int ans = stoi(bin1,nullptr,2) & stoi(bin2, nullptr, 2);
 
     // Setting the register
-    r.setreg(binToHex(to_string(ans)),idx);
+    r.setReg(idx, binToHex(to_string(ans)));
 }
 
-void Xoring(string hex1, string hex2, int idx, Register &r) {
+void Xoring(int id1, int id2, int idx, Register &r) {
+    string hex1 = r.getReg(id1);
+    string hex2 = r.getReg(id2);
     // Converting the numbers to binary
     string bin1 = Hextobin(hex1);
     string bin2 = Hextobin(hex2);
@@ -331,9 +291,46 @@ void Xoring(string hex1, string hex2, int idx, Register &r) {
     int ans = stoi(bin1,nullptr,2) ^ stoi(bin2, nullptr, 2);
 
     // Setting the register
-    r.setreg(binToHex(to_string(ans)),idx);
+    r.setReg(idx, binToHex(to_string(ans)));
 }
+    string FloatRep(int dec) {
+        string exponent;
+        string dectobin = decimalToBinary(dec);
+        int bias = 4; // Bias for the exponent
+        int sign = dectobin[0] == '1' ? 1 : 0;
 
+        // Extract the exponent (3 bits)
+        for (int i = 1; i <= 3; i++) {
+            exponent += dectobin[i];
+        }
+
+        // Extract the mantissa (4 bits)
+        string mantisa = "";
+        for (int i = 4; i < 8; i++) {
+            mantisa += dectobin[i];
+        }
+
+        // Calculate the actual mantissa value as a decimal
+        float mantissaValue = 0.0; // Start with explicit leading 0
+        for (int i = 0; i < mantisa.length(); i++) {
+            mantissaValue += (mantisa[i] - '0') * pow(2, -(i + 1)); // Binary fraction
+        }
+
+        // Convert exponent from binary to decimal
+        int exponentValue = stoi(exponent, nullptr, 2) - bias;
+
+        // Calculate the floating-point result
+        string result = to_string(pow(-1, sign) * mantissaValue * pow(2, exponentValue));
+
+        if(stof(result) > 7.5) {
+            result = to_string(7.5);
+        }
+        if(stof(result) < -7.5) {
+            result = to_string(-7.5);
+        }
+        // Convert result to string
+        return result;
+    }
 
 };
 

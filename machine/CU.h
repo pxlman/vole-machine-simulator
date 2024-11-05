@@ -5,6 +5,7 @@
 #include <string>
 #include "Register.h"
 #include "Memory.h"
+#include "machine/ALU.h"
 
 using namespace std;
 
@@ -33,6 +34,14 @@ public:
 
     void jump(int id_reg, int id_mem, Register reg, int &counter) {
         if (reg.getReg(0) == reg.getReg(id_reg)) {
+            counter = id_mem;
+        }
+    }
+    void jumpLessThan(int id_reg, int id_mem, Register reg, int &counter) {
+        ALU alu;
+        float reg0 = alu.FloatRep(alu.hextodec(reg.getReg(0)));
+        float regi = alu.FloatRep(alu.hextodec(reg.getReg(id_reg)));
+        if (regi > reg0) {
             counter = id_mem;
         }
     }

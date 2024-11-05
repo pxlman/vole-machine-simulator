@@ -72,7 +72,7 @@ public:
 
     vector<int> decode() {
         vector<int> decoded;
-        string R,S,T,XY;
+        string R,S,T,XY,X;
         switch (instructionRegister[0]) {
             case '0': // ERROR
                 decoded.push_back(instructionRegister[0]);
@@ -120,6 +120,40 @@ public:
                 decoded.push_back(alu.hextodec(T));
                 decoded.push_back(alu.hextodec(R));
                 break;
+            case '7': // R, S, T
+                R = instructionRegister[1];
+                S = instructionRegister[2];
+                T = instructionRegister[3];
+                decoded.push_back(instructionRegister[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '8': // R, S, T
+                R = instructionRegister[1];
+                S = instructionRegister[2];
+                T = instructionRegister[3];
+                decoded.push_back(instructionRegister[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '9': // R, S, T
+                R = instructionRegister[1];
+                S = instructionRegister[2];
+                T = instructionRegister[3];
+                decoded.push_back(instructionRegister[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case 'A': // RxX
+                R = instructionRegister[1];
+                X = instructionRegister[3];
+                decoded.push_back(instructionRegister[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(X));
+                break;
             case 'B': // R, XY
                 R = instructionRegister[1];
                 decoded.push_back(instructionRegister[0]);
@@ -164,6 +198,26 @@ public:
             case '6': // R, S, T
                 // Add the content of R to S and put the result in T using floating point
                 alu.addFloat(instruction[1],instruction[2], instruction[3],reg);
+                program_counter.increaseBy(2);
+                break;
+            case '7': // R, S, T
+                // Add the content of R to S and put the result in T using floating point
+                alu.ORing(instruction[1],instruction[2], instruction[3],reg);
+                program_counter.increaseBy(2);
+                break;
+            case '8': // R, S, T
+                // Add the content of R to S and put the result in T using floating point
+                alu.Anding(instruction[1],instruction[2], instruction[3],reg);
+                program_counter.increaseBy(2);
+                break;
+            case '9': // R, S, T
+                // Add the content of R to S and put the result in T using floating point
+                alu.Xoring(instruction[1],instruction[2], instruction[3],reg);
+                program_counter.increaseBy(2);
+                break;
+            case 'A': // RxX
+                // Add the content of R to S and put the result in T using floating point
+                alu.reverse(instruction[1],instruction[2], reg);
                 program_counter.increaseBy(2);
                 break;
             case 'B': // R, XY
