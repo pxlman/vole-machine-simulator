@@ -2,13 +2,13 @@
 #include "ui_mainwindow.h"
 #include <QFileDialog>
 #include <QStandardPaths>
-#include"qthread.h"
-#include"qtimer.h"
+#include "qthread.h"
+#include "qtimer.h"
 #include <iostream>
-#include<vector>
-#include"MainMachine.h"
-#include"machine/Machine.h"
-#include"UiFunctions.h"
+#include <vector>
+#include "MainMachine.h"
+#include "machine/Machine.h"
+#include "UiFunctions.h"
 #include <QTimer>
 using namespace std;
 UiF uif = UiF(); // My UI functions

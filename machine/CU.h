@@ -39,9 +39,9 @@ public:
     }
     void jumpLessThan(int id_reg, int id_mem, Register reg, int &counter) {
         ALU alu;
-        float reg0 = alu.FloatRep(alu.hextodec(reg.getReg(0)));
-        float regi = alu.FloatRep(alu.hextodec(reg.getReg(id_reg)));
-        if (regi > reg0) {
+        string reg0 = alu.FloatRep(alu.hextodec(reg.getReg(0)));
+        string regi = alu.FloatRep(alu.hextodec(reg.getReg(id_reg)));
+        if (stof(regi) > stof(reg0)) {
             counter = id_mem;
         }
     }

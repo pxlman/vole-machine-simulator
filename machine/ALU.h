@@ -254,8 +254,6 @@ void reverse(int idx, int& deg, Register &r) {
     r.setReg(idx, binToHex(reversed));
 }
 
-string binToHex(const string & string);
-
 void ORing(int id1, int id2,int idx,Register &r) { // Bit wise ORing function string hex1 = alu // Converting the numbers to binary
     string hex1 = r.getReg(id1);
     string hex2 = r.getReg(id2);
