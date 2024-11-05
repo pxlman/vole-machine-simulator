@@ -280,7 +280,7 @@ void Anding(int id1, int id2, int idx, Register &r) {
     int ans = stoi(bin1,nullptr,2) & stoi(bin2, nullptr, 2);
 
     // Setting the register
-    r.setReg(idx, binToHex(to_string(ans)));
+    r.setReg(idx, binToHex(decimalToBinary(ans)));
 }
 
 void Xoring(int id1, int id2, int idx, Register &r) {
@@ -294,7 +294,7 @@ void Xoring(int id1, int id2, int idx, Register &r) {
     int ans = stoi(bin1,nullptr,2) ^ stoi(bin2, nullptr, 2);
 
     // Setting the register
-    r.setReg(idx, binToHex(to_string(ans)));
+    r.setReg(idx, binToHex(decimalToBinary(ans)));
 }
     string FloatRep(int dec) {
         string exponent;
