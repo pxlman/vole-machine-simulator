@@ -1,3 +1,6 @@
+#ifndef VOLE_MACHINE_ALU_H
+#define VOLE_MACHINE_ALU_H
+#pragma once
 #include <vector>
 #include <string>
 #include <cmath>
@@ -308,3 +311,5 @@ public:
         reg.setReg(idx, (twosHex.length() == 2)? twosHex : "0" + twosHex);
     }
 };
+
+#endif //VOLE_MACHINE_ALU_H

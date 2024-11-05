@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Setting tables to UI functions
     uif.setTables(ui->registerTable, ui->memoryTable);
+    uif.setTable2(ui->memoryTable_2);
     uif.setErrorLabel(ui->errorLabel);
     uif.setMachine(&machine);
     uif.setOutput(ui->outputField);
@@ -35,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Timer for running speed
     connect(timer, &QTimer::timeout, this, &MainWindow::on_singleStepBtn_clicked);
     connect(ui->runBtn, &QPushButton::clicked, this, &MainWindow::on_running);
+    connect(ui->instructionText, &QLineEdit::returnPressed, this, &MainWindow::on_addInstructionBtn_clicked);
 }
 
 MainWindow::~MainWindow()
@@ -48,9 +50,18 @@ void MainWindow::on_singleStepBtn_clicked()
     if(!machine.isHalted() && machine.getPC() < 255){
         machine.cycle();
         uif.refreshTables();
+        on_program_counter_change();
     } else {
         timer->stop();
         ui->speedSlider->setEnabled(true);
+    }
+}
+
+void MainWindow::on_program_counter_change(){
+    if(machine.getPC()>= 14){
+        ui->memoryTable_2->scrollToItem(ui->memoryTable_2->item(machine.getPC()/2,0));
+    } else {
+        ui->memoryTable_2->scrollToItem(ui->memoryTable_2->item(0,0));
     }
 }
 
@@ -118,6 +129,7 @@ void MainWindow::on_clearAllBtn_clicked()
 {
     machine.clearAll();
     uif.refreshTables();
+    on_program_counter_change();
 }
 
 
@@ -126,6 +138,3 @@ void MainWindow::on_haltBtn_clicked()
     timer->stop();
     ui->speedSlider->setEnabled(true);
 }
-
-
-
