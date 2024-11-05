@@ -5,9 +5,11 @@
 #include "ui_mainwindow.h"
 #include <QFileDialog>
 #include "machine/Machine.h"
+#include "machine/ALU.h"
 class UiF {
 private:
     QTableWidget *memory_table;
+    QTableWidget *memory_table2;
     QTableWidget *reg_table;
     Machine *mm;
     QLabel *errLabel;
@@ -22,6 +24,9 @@ public:
     void setTables(QTableWidget *r_table, QTableWidget *m_table){
         memory_table = m_table;
         reg_table = r_table;
+    }
+    void setTable2(QTableWidget *m_table){
+        memory_table2 = m_table;
     }
     void setMachine(Machine *m){
         mm = m;
@@ -146,6 +151,48 @@ public:
             }
         }
     }
+    void fetchingMemoryTableV3(vector<string> memory){
+        QTableWidget *table = memory_table2;
+        ALU alu = ALU();
+        for (int i = 0; i < 256; i+=2) { // the table is 1 based index
+            QString cell1 = QString::fromStdString(alu.decToHex(i));
+            QString cell2 = QString::fromStdString(memory[i]);
+            QString cell3 = QString::fromStdString(memory[i+1]);
+            QString cell4 = QString::fromStdString(alu.decToHex(i+1));
+            auto *item1 = new QTableWidgetItem(cell1);
+            auto *item2 = new QTableWidgetItem(cell2);
+            auto *item3 = new QTableWidgetItem(cell3);
+            auto *item4 = new QTableWidgetItem(cell4);
+            item1 -> setTextAlignment(Qt::AlignCenter);
+            item2 -> setTextAlignment(Qt::AlignCenter);
+            item3 -> setTextAlignment(Qt::AlignCenter);
+            item4 -> setTextAlignment(Qt::AlignCenter);
+            // Program counter
+            if(i == mm->getPC()){
+                item2->setBackground(QBrush("#c4a7e7"));
+                item3->setBackground(QBrush("#c4a7e7"));
+                item2->setForeground(QBrush("#21202e"));
+                item3->setForeground(QBrush("#21202e"));
+            }
+            if(i >= 254 && mm->getPC() >= 255){
+                item2->setBackground(QBrush("#191724"));
+                item3->setBackground(QBrush("#191724"));
+                item2->setForeground(QBrush("#faf4ed"));
+                item3->setForeground(QBrush("#faf4ed"));
+            }
+            // Output cells
+            if(i == 0){
+                item2->setBackground(QBrush("#6e6a86"));
+                item3->setBackground(QBrush("#6e6a86"));
+                item2->setForeground(QBrush("#faf4ed"));
+                item3->setForeground(QBrush("#faf4ed"));
+            }
+            table->setItem(i/2, 0, item1);
+            table->setItem(i/2, 1, item2);
+            table->setItem(i/2, 2, item3);
+            table->setItem(i/2, 3, item4);
+        }
+    }
     void fetchingPCIR(){
         Machine machine = *mm;
         int pc = machine.getPC();
@@ -158,6 +205,7 @@ public:
         // Memory
         vector<string> memory = machine.getMemoryVector();
         fetchingMemoryTableV2(memory);
+        fetchingMemoryTableV3(memory);
         // Registers
         vector<string> reg = machine.getRegisterVector();
         fetchingRegisterTable(reg);

@@ -1,3 +1,6 @@
+#ifndef VOLE_MACHINE_ALU_H
+#define VOLE_MACHINE_ALU_H
+#pragma once
 #include <vector>
 #include <string>
 #include <cmath>
@@ -333,3 +336,5 @@ void Xoring(string hex1, string hex2, int idx, Register &r) {
 
 
 };
+
+#endif //VOLE_MACHINE_ALU_H

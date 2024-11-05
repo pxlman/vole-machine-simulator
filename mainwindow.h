@@ -31,9 +31,12 @@ private slots:
     void on_clearAllBtn_clicked();
 
     void on_running();
+
     void on_haltBtn_clicked();
 
     void on_restartBtn_clicked();
+
+    void on_program_counter_change();
 
 private:
     Ui::MainWindow *ui;
