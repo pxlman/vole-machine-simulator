@@ -40,6 +40,7 @@ public:
         reg = Register();
         alu = ALU();
         cu = CU();
+        halted = false;
     }
     void clearAll(){
         program_counter = PC();
@@ -47,6 +48,7 @@ public:
         reg = Register();
         alu = ALU();
         cu = CU();
+        halted = false;
     }
     bool isHalted(){
         return halted;

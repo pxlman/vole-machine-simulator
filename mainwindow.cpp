@@ -75,6 +75,11 @@ void MainWindow::on_running(){
     timer->setInterval((4 - ui->speedSlider->value()) * 200);
     timer->start();
     ui->speedSlider->setDisabled(true);
+    ui->addInstructionBtn->setDisabled(true);
+    ui->loadFileBtn->setDisabled(true);
+    ui->clearAllBtn->setDisabled(true);
+    ui->clearMemoryBtn->setDisabled(true);
+    ui->singleStepBtn->setDisabled(true);
 }
 
 
@@ -137,4 +142,9 @@ void MainWindow::on_haltBtn_clicked()
 {
     timer->stop();
     ui->speedSlider->setEnabled(true);
+    ui->addInstructionBtn->setEnabled(true);
+    ui->loadFileBtn->setEnabled(true);
+    ui->clearAllBtn->setEnabled(true);
+    ui->clearMemoryBtn->setEnabled(true);
+    ui->singleStepBtn->setEnabled(true);
 }
