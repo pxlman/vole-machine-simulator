@@ -77,7 +77,7 @@ private:
         return binary;
     }
 
-    string binToHex(string &convertedbin) {
+    string binToHex(const string &convertedbin) {
         string firstNibble = convertedbin.substr(0, 4);
         string secondNibble = convertedbin.substr(4, 4);
 
