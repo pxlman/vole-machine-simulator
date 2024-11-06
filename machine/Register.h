@@ -16,7 +16,11 @@ public:
     }
 
     void setReg(int address, string val) {
-        reg[address] = val;
+        if(val.length() == 1){
+            reg[address] = "0" + val;
+        } else {
+            reg[address] = val;
+        }
     }
 
     string getReg(int address) {

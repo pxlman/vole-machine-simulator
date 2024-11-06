@@ -32,18 +32,18 @@ public:
         mem.setCell(id_mem, reg.getReg(id_reg));
     }
 
-    void jump(int id_reg, int id_mem, Register reg, int &counter) {
+    void jump(int id_reg, int id_mem, Register reg, PC *pc) {
         if (reg.getReg(0) == reg.getReg(id_reg)) {
-            counter = id_mem;
-        }
+            pc->set(id_mem);
+        } else pc->increaseBy(2);
     }
-    void jumpLessThan(int id_reg, int id_mem, Register reg, int &counter) {
+    void jumpLessThan(int id_reg, int id_mem, Register reg, PC *pc) {
         ALU alu;
         string reg0 = alu.FloatRep(alu.hextodec(reg.getReg(0)));
         string regi = alu.FloatRep(alu.hextodec(reg.getReg(id_reg)));
         if (stof(regi) > stof(reg0)) {
-            counter = id_mem;
-        }
+            pc->set(id_mem);
+        } else pc->increaseBy(2);
     }
 
     void halt() {

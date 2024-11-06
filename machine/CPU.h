@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <string>
+#include <format>
+#include <iostream>
 #include "Memory.h"
 #include "Register.h"
 #include "ALU.h"
@@ -34,6 +36,7 @@ public:
         reg = Register();
         alu = ALU();
         cu = CU();
+        instructionRegister = memory->getCell(2) + memory->getCell(3);
     }
     void clearCPU(){
         program_counter = PC();
@@ -52,6 +55,9 @@ public:
     }
     bool isHalted(){
         return halted;
+    }
+    void setHalt(){
+        halted = true;
     }
     int getPC(){
         return program_counter.get();
@@ -163,12 +169,18 @@ public:
             case 'C': // Halt
                 decoded.push_back(instructionRegister[0]);
                 break;
+            case 'D': // R, XY
+                R = instructionRegister[1];
+                decoded.push_back(instructionRegister[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instructionRegister.substr(2,2)));
+                break;
         }
         return decoded;
     }
-
-    void execute(vector<int>) {
-        auto instruction = decode();
+    void execute(vector<int> instruction) {
+        // auto instruction = decode();
+        if(program_counter.get() >= 254) halted = true;
         if (halted) return;
         switch (instruction[0]) {
             case '0': // nothing
@@ -221,16 +233,175 @@ public:
                 program_counter.increaseBy(2);
                 break;
             case 'B': // R, XY
-                if(reg.getReg(instruction[1]) == reg.getReg(0)){
-                    program_counter.set(instruction[2]);
-                } else {
-                    program_counter.increaseBy(2);
-                }
+                cu.jump(instruction[1],instruction[2],reg, &program_counter);
                 break;
             case 'C':
                 halted = true;
                 break;
+            case 'D': // R, XY
+                cu.jumpLessThan(instruction[1],instruction[2],reg, &program_counter);
+                break;
         }
+    }
+    string guidance(vector<int> decoded){
+        vector<string> arr;
+        arr.push_back(""+(char)decoded[0]);
+        if(decoded.size() > 1){
+            for (long unsigned var = 1; var < decoded.size(); ++var) {
+                arr.push_back(alu.decToHex(decoded[var]));
+            }
+        }
+        string guide;
+        switch (decoded[0]) {
+        case '0': // nothing
+            guide = "Ignore it." ;
+            break;
+        case '1': // R, XY
+            guide = "Copy the content of RAM cell " + arr[2] + " to register " + arr[1] + '.';
+            break;
+        case '2': // R, XY
+            guide = "Copy the bit-string " + arr[2] + " to register " + arr[1] + '.';
+            break;
+        case '3': // R, XY
+            guide = "Copy the content of register " + arr[1] + " to RAM cell " + arr[2] + '.';
+            break;
+        case '4': // R, S
+            guide = "Copy the content of register " + arr[1] + " to register " + arr[2] + ".";
+            break;
+        case '5': // R, S, T
+            // Add the content of R to S and put the result in T using two comp
+            guide = "Add the content of register " + arr[2] + " and register " + arr[3] + " then put the result at register " + arr[1] + " as integers in two's complement notation.";
+            break;
+        case '6': // R, S, T
+            // Add the content of R to S and put the result in T using floating point
+            guide = "Add the content of register " + arr[2] + " and register " + arr[3] + " then put the result at register " + arr[1] + " as floats.";
+            break;
+        case '7': // R, S, T
+            guide = "Bitwise OR (∨) the content of register " + arr[2] + " and register " + arr[3] + " then put the result at register " + arr[1] + " as floats.";
+            break;
+        case '8': // R, S, T
+            guide = "Bitwise AND (∧) the content of register " + arr[2] + " and register " + arr[3] + " then put the result at register " + arr[1] + " as floats.";
+            break;
+        case '9': // R, S, T
+            guide = "Bitwise XOR (⊕) the content of register " + arr[2] + " and register " + arr[3] + " then put the result at register " + arr[1] + " as floats.";
+            break;
+        case 'A': // RxX
+            guide = "Rotate the content of register " + arr[1] + " cyclically right " + to_string(alu.hextodec(arr[2])) + " steps.";
+            break;
+        case 'B': // R, XY
+            guide = "Jump to the instruction at RAM cell " + arr[2] + " if the content at register " + arr[1] + " equals to the content of register 0.";
+            break;
+        case 'C':
+            guide = "Halt.";
+            break;
+        case 'D': // R, XY
+            guide = "Jump to the instruction at RAM cell " + arr[2] + " if the content at register " + arr[1] + " greater than the content of register 0 where numbers are represented in floating point representation.";
+            break;
+        }
+        return guide;
+    }
+    vector<int> decodeMemAddress(int i) {
+        vector<int> decoded;
+        string R,S,T,XY,X;
+        string instruction = memory->getCell(i) + memory->getCell(i+1) ;
+        switch (instruction[0]) {
+            case '0': // ERROR
+                decoded.push_back(instruction[0]);
+                break;
+            case '1': // R, XY
+                decoded.push_back(instruction[0]);
+                R = instruction[1];
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instruction.substr(2,2)));
+                break;
+            case '2': // R, XY
+                decoded.push_back(instruction[0]);
+                R = instruction[1];
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instruction.substr(2,2)));
+                break;
+            case '3': // R, XY
+                R = instruction[1];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instruction.substr(2,2)));
+                break;
+            case '4': // R, S
+                R = instruction[1];
+                S = instruction[2];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(S));
+                break;
+            case '5': // R, S, T
+                R = instruction[1];
+                S = instruction[2];
+                T = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '6': // R, S, T
+                R = instruction[1];
+                S = instruction[2];
+                T = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '7': // R, S, T
+                R = instruction[1];
+                S = instruction[2];
+                T = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '8': // R, S, T
+                R = instruction[1];
+                S = instruction[2];
+                T = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case '9': // R, S, T
+                R = instruction[1];
+                S = instruction[2];
+                T = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(S));
+                decoded.push_back(alu.hextodec(T));
+                decoded.push_back(alu.hextodec(R));
+                break;
+            case 'A': // RxX
+                R = instruction[1];
+                X = instruction[3];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(X));
+                break;
+            case 'B': // R, XY
+                R = instruction[1];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instruction.substr(2,2)));
+                break;
+            case 'C': // Halt
+                decoded.push_back(instruction[0]);
+                break;
+            case 'D': // R, XY
+                R = instruction[1];
+                decoded.push_back(instruction[0]);
+                decoded.push_back(alu.hextodec(R));
+                decoded.push_back(alu.hextodec(instruction.substr(2,2)));
+                break;
+        }
+        return decoded;
     }
 };
 

@@ -19,7 +19,11 @@ public:
         mem = m;
     }
     void setCell(int address, string val) {
-        mem[address] = val;
+        if(val.length() == 1){
+            mem[address] = "0" + val;
+        } else {
+            mem[address] = val;
+        }
     }
     void insertCell(string val) {
         if(!validHexa(val)){
@@ -60,7 +64,7 @@ public:
     }
     bool validInstructin(string inst){
         if(inst.length() != 4) return false;
-        if((inst[0] > '6' || inst[0] < '0') && (inst[0] < 'B' || inst[0] > 'C')) return false;
+        if((inst[0] > '9' || inst[0] < '0') && (inst[0] < 'A' || inst[0] > 'D')) return false;
         for(int i = 1; i < 4; i++){
             if((inst[0] > '9' || inst[0] < '0') && (inst[0] < 'A' || inst[0] > 'F')) return false;
         }
@@ -94,6 +98,10 @@ public:
 
     void increaseBy(int i) {
         counter += i;
+    }
+
+    void undo(){
+        counter -= 2;
     }
 
     int get() {

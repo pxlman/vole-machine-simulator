@@ -18,6 +18,7 @@ private:
     QLabel *speedLabel;
     QLineEdit *PCLabel;
     QLineEdit *IRLabel;
+    QPushButton *undoBtn;
 public:
     UiF(){
     }
@@ -30,6 +31,9 @@ public:
     }
     void setMachine(Machine *m){
         mm = m;
+    }
+    void setUndoBtn(QPushButton *b){
+        undoBtn = b;
     }
     void setErrorLabel(QLabel *el){
         errLabel = el;
@@ -138,7 +142,7 @@ public:
                     item->setBackground(QBrush("#c4a7e7"));
                     item->setForeground(QBrush("#21202e"));
                 }
-                if(index >= 254 && mm->getPC() >= 255){
+                if(index >= 254 && mm->getPC() >= 254){
                     item->setBackground(QBrush("#191724"));
                     item->setForeground(QBrush("#faf4ed"));
                 }
@@ -159,10 +163,12 @@ public:
             QString cell2 = QString::fromStdString(memory[i]);
             QString cell3 = QString::fromStdString(memory[i+1]);
             QString cell4 = QString::fromStdString(alu.decToHex(i+1));
+            // QString cell5 = QString::fromStdString(mm->getGuide(i));
             auto *item1 = new QTableWidgetItem(cell1);
             auto *item2 = new QTableWidgetItem(cell2);
             auto *item3 = new QTableWidgetItem(cell3);
             auto *item4 = new QTableWidgetItem(cell4);
+            // auto *item5 = new QTableWidgetItem(cell5);
             item1 -> setTextAlignment(Qt::AlignCenter);
             item2 -> setTextAlignment(Qt::AlignCenter);
             item3 -> setTextAlignment(Qt::AlignCenter);
@@ -173,8 +179,10 @@ public:
                 item3->setBackground(QBrush("#c4a7e7"));
                 item2->setForeground(QBrush("#21202e"));
                 item3->setForeground(QBrush("#21202e"));
+                item2->setToolTip("Cells of the current instruction");
+                item3->setToolTip("Cells of the current instruction");
             }
-            if(i >= 254 && mm->getPC() >= 255){
+            if(i >= 254 && mm->getPC() >= 254){
                 item2->setBackground(QBrush("#191724"));
                 item3->setBackground(QBrush("#191724"));
                 item2->setForeground(QBrush("#faf4ed"));
@@ -186,11 +194,15 @@ public:
                 item3->setBackground(QBrush("#6e6a86"));
                 item2->setForeground(QBrush("#faf4ed"));
                 item3->setForeground(QBrush("#faf4ed"));
+                item2->setToolTip("Reserved for the screen");
+                item3->setToolTip("Reserved for the screen");
             }
             table->setItem(i/2, 0, item1);
             table->setItem(i/2, 1, item2);
             table->setItem(i/2, 2, item3);
             table->setItem(i/2, 3, item4);
+            // table->setItem(i/2, 4, item5);
+            memory_table2->resizeColumnsToContents();
         }
     }
     void fetchingPCIR(){
@@ -204,7 +216,7 @@ public:
         Machine machine = *mm;
         // Memory
         vector<string> memory = machine.getMemoryVector();
-        fetchingMemoryTableV2(memory);
+        // fetchingMemoryTableV2(memory);
         fetchingMemoryTableV3(memory);
         // Registers
         vector<string> reg = machine.getRegisterVector();
@@ -212,9 +224,17 @@ public:
         // PC and IR
         fetchingPCIR();
         // output
-        QString m0 = QString::fromStdString(memory[0]);
-        QString m1 = QString::fromStdString(memory[1]);
+        ALU alu;
+        QString m0 = QString::fromStdString(""+(char)alu.hextodec(memory[0]));
+        QString m1 = QString::fromStdString(""+(char)alu.hextodec(memory[1]));
         output->setText(m0+" "+m1);
+        if(machine.getPC() <= 14){
+            memory_table2->scrollToItem(memory_table2->item(0 ,0));
+        } else {
+            memory_table2->scrollToItem(memory_table2->item(machine.getPC()/2, 0));
+        }
+        if(mm->getPC() <= 2) undoBtn->setDisabled(true);
+        else undoBtn->setEnabled(true);
     }
 };
 

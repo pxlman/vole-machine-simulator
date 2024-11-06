@@ -178,7 +178,7 @@ public:
                 hex = hexmap[temp] + hex;
             }
         }
-        return hex.empty() ? "0" : hex;
+        return hex.empty() ? "00" : ((hex.length() == 1)? '0'+hex: hex);
     }
     void addFloat(int id1, int id2, int idx, Register &reg) {
         int num1 = hextodec(reg.getReg(id1));

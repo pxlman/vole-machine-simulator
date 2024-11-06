@@ -36,9 +36,18 @@ private slots:
 
     void on_restartBtn_clicked();
 
-    void on_program_counter_change();
+    void on_stepBackBtn_clicked();
+
+    void on_helpBtn_clicked();
+
+    void on_instructionText_textChanged(const QString &arg1);
 
 private:
+    void on_program_counter_change();
+    void choose_bmo_face(std::string emotion);
+    void guideMe();
+    void pause();
+    void resume();
     Ui::MainWindow *ui;
     QTimer *timer;
 };

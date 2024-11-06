@@ -1,5 +1,24 @@
 <RCC>
     <qresource prefix="/styles">
         <file>stylesheet.qss</file>
+        <file>images/icons8-right-arrow-32.png</file>
+        <file>images/icons8-u-turn-to-left-32.png</file>
+        <file>images/icons8-question-mark-32.png</file>
+        <file>images/bmo9-150x150.jpg</file>
+        <file>images/bmohiinverted.png</file>
+        <file>images/face_angry.png</file>
+        <file>images/face_angry2.png</file>
+        <file>images/face_comfy.png</file>
+        <file>images/face_cry.png</file>
+        <file>images/face_cute.png</file>
+        <file>images/face_disrespect.png</file>
+        <file>images/face_happy1.png</file>
+        <file>images/face_happy2.png</file>
+        <file>images/face_impressed.png</file>
+        <file>images/face_littlesad.png</file>
+        <file>images/face_mad1.png</file>
+        <file>images/face_mad2.png</file>
+        <file>images/face_sad.png</file>
+        <file>images/face_sad2.png</file>
     </qresource>
 </RCC>

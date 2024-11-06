@@ -30,6 +30,8 @@ class Machine {
 private:
     Memory memory;
     Memory old_memory;
+    vector<Memory> past_memory;
+    vector<CPU> past_cpu;
     CPU cpu;
 public:
     Machine() {
@@ -54,12 +56,14 @@ public:
         if(memory.validInstructin(inst)){
             memory.insertCell(inst.substr(0,2));
             memory.insertCell(inst.substr(2,2));
+            old_memory = memory;
         } else {
             throw "Invalid instruction";
         }
     }
     void addFile(string &path){
         memory.insertFile(path);
+        old_memory = memory;
     }
     pair<Memory, CPU> getState(){
         pair<Memory, CPU> var = {memory,cpu};
@@ -75,7 +79,11 @@ public:
         return cpu.getPC();
     }
     string getIR(){
+        cpu.fetch();
         return cpu.getIR();
+    }
+    string getGuide(int i){
+        return cpu.guidance(cpu.decodeMemAddress(i));
     }
     void clearMemory(){
         memory.clear();
@@ -85,9 +93,21 @@ public:
         cpu.clearCPU();
     }
     void cycle(){
+        if(isHalted()) return;
         cpu.fetch();
         vector<int> instructionVector = cpu.decode();
+        past_memory.push_back(memory);
+        past_cpu.push_back(cpu);
         cpu.execute(instructionVector);
+    }
+    void undo(){
+        memory = past_memory.at(past_memory.size()-1);
+        past_memory.pop_back();
+        cpu = past_cpu.at(past_memory.size()-1);
+        past_cpu.pop_back();
+    }
+    void halt(){
+        cpu.setHalt();
     }
 };
 
