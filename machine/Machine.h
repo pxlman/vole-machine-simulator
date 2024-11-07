@@ -94,16 +94,16 @@ public:
     }
     void cycle(){
         if(isHalted()) return;
-        cpu.fetch();
-        vector<int> instructionVector = cpu.decode();
         past_memory.push_back(memory);
         past_cpu.push_back(cpu);
+        cpu.fetch();
+        vector<int> instructionVector = cpu.decode();
         cpu.execute(instructionVector);
     }
     void undo(){
         memory = past_memory.at(past_memory.size()-1);
         past_memory.pop_back();
-        cpu = past_cpu.at(past_memory.size()-1);
+        cpu = past_cpu.at(past_cpu.size()-1);
         past_cpu.pop_back();
     }
     void halt(){

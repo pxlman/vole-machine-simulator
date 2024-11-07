@@ -91,17 +91,23 @@ void MainWindow::guideMe(){
 
 void MainWindow::on_singleStepBtn_clicked()
 {
+    if(machine.getIR()[0] == '0'){
+        pause();
+        guideMe();
+        return;
+        // choose_bmo_face("sad");
+        // uif.refreshTables();
+    }
     if(!machine.isHalted() && machine.getPC() < 255){
         machine.cycle();
         guideMe();
         choose_bmo_face("happy");
-        uif.refreshTables();
     } else {
         timer->stop();
         on_haltBtn_clicked();
         choose_bmo_face("sad");
-        uif.refreshTables();
     }
+    uif.refreshTables();
 }
 
 void MainWindow::on_program_counter_change(){
@@ -115,8 +121,9 @@ void MainWindow::on_program_counter_change(){
 void MainWindow::on_restartBtn_clicked()
 {
     machine.restart();
-    ui->runBtn->setDisabled(true);
-    ui->singleStepBtn->setDisabled(true);
+    guideMe();
+    // ui->runBtn->setDisabled(true);
+    // ui->singleStepBtn->setDisabled(true);
     choose_bmo_face("happy");
     uif.refreshTables();
 }
@@ -136,7 +143,7 @@ void MainWindow::pause(){
 }
 
 void MainWindow::resume(){
-    timer->setInterval((21 - ui->speedSlider->value()) * 150 - 140);
+    timer->setInterval((7 - ui->speedSlider->value()) * 150 - 140);
     timer->start();
     ui->speedSlider->setDisabled(true);
     ui->addInstructionBtn->setDisabled(true);
@@ -175,7 +182,9 @@ void MainWindow::on_loadFileBtn_clicked()
             filePath = path.toStdString();
             machine.addFile(filePath);
             choose_bmo_face("smile");
+            uif.notError();
             uif.refreshTables();
+            guideMe();
         } catch (...){
             machine.clearMemory();
             choose_bmo_face("mad");
@@ -196,6 +205,7 @@ void MainWindow::on_addInstructionBtn_clicked()
         choose_bmo_face("happy");
         uif.refreshTables(); // refresh the tables
         uif.notError(); // in case a weird instruction
+        guideMe();
     } catch (...) {
         choose_bmo_face("mad");
         uif.handleError();
@@ -215,11 +225,7 @@ void MainWindow::on_clearMemoryBtn_clicked()
 void MainWindow::on_speedSlider_sliderMoved(int position)
 {
     choose_bmo_face("smile");
-    if(position <= 10){
-        ui->speedLabel->setText(QString::fromStdString(to_string(position/10.0).substr(0,3)));
-    } else {
-        ui->speedLabel->setText(QString::fromStdString(to_string(position/5.0).substr(0,3)));
-    }
+    ui->speedLabel->setText(QString::fromStdString(to_string(position/3.0).substr(0,3)));
     uif.refreshTables();
 }
 

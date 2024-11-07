@@ -846,10 +846,10 @@
         <number>1</number>
        </property>
        <property name="maximum">
-        <number>20</number>
+        <number>6</number>
        </property>
        <property name="value">
-        <number>10</number>
+        <number>3</number>
        </property>
        <property name="orientation">
         <enum>Qt::Orientation::Horizontal</enum>
@@ -1373,6 +1373,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <height>151</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Hi!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;I'm ZMO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -1392,6 +1395,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <height>101</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>BMO's face</string>
+    </property>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
@@ -1399,7 +1405,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/styles/images/face_angry2.png</pixmap>
+     <pixmap resource="resources.qrc">:/styles/images/face_cute.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

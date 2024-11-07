@@ -184,7 +184,7 @@ public:
         if (halted) return;
         switch (instruction[0]) {
             case '0': // nothing
-                program_counter.increaseBy(2);
+                // program_counter.increaseBy(2);
                 break;
             case '1': // R, XY
                 cu.load(instruction[1],instruction[2], reg, *memory);
@@ -254,7 +254,7 @@ public:
         string guide;
         switch (decoded[0]) {
         case '0': // nothing
-            guide = "Ignore it." ;
+            guide = "No op code." ;
             break;
         case '1': // R, XY
             guide = "Copy the content of RAM cell " + arr[2] + " to register " + arr[1] + '.';

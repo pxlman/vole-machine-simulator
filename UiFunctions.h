@@ -6,6 +6,7 @@
 #include <QFileDialog>
 #include "machine/Machine.h"
 #include "machine/ALU.h"
+#include <QDebug>
 class UiF {
 private:
     QTableWidget *memory_table;
@@ -225,8 +226,19 @@ public:
         fetchingPCIR();
         // output
         ALU alu;
-        QString m0 = QString::fromStdString(""+(char)alu.hextodec(memory[0]));
-        QString m1 = QString::fromStdString(""+(char)alu.hextodec(memory[1]));
+        int mi0 = alu.hextodec(memory[0]);
+        QString m0 = "";
+        if( mi0 >= 32 && mi0 <= 125){
+            m0 = QString::fromStdString(""+alu.hextodec(memory[0]));
+        }
+        int mi1 = alu.hextodec(memory[1]);
+        QString m1 = "";
+        if( mi1 >= 32 && mi1 <= 125){
+            m1 = QString::fromStdString(""+alu.hextodec(memory[1]));
+        }
+        cout << m0.toStdString() << ' ' << m1.toStdString() << '\n';
+        if(!m0.isSimpleText()) m0 = "";
+        if(!m1.isSimpleText()) m1 = "";
         output->setText(m0+" "+m1);
         if(machine.getPC() <= 14){
             memory_table2->scrollToItem(memory_table2->item(0 ,0));
