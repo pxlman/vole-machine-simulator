@@ -5,7 +5,7 @@ youtube link showing the software: [Youtube video](https://youtu.be/WWo3SEs9rvE?
 The software currently working on linux only
 but if u want to open it u can use the source code and compile it on your machine or use docker
 # How to use
-1. Download the source code
+1. Download the source code (Make sure u have qmake and make installed)
 2. Open the terminal and navigate to the source code directory
 3. Run the following commands:
 ```bash
