@@ -1,0 +1,112 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed",
+						"/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"
+					],
+					"linkDirectories" : 
+					[
+						"/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0",
+						"/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib",
+						"/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/home/pxlman/.nix-profile/bin/cc",
+				"version" : "13.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/x86_64-unknown-linux-gnu",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/backward",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed",
+						"/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"
+					],
+					"linkDirectories" : 
+					[
+						"/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0",
+						"/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib",
+						"/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64",
+						"/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/home/pxlman/.nix-profile/bin/c++",
+				"version" : "13.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

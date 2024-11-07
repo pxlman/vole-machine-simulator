@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "volemachine.exe"
-		},
-		{
-			"path" : "volemachine.pdb"
+			"path" : "volemachine"
 		}
 	],
 	"backtrace" : 1,
@@ -58,18 +55,14 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-rdynamic",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "volemachine",
-	"nameOnDisk" : "volemachine.exe",
+	"nameOnDisk" : "volemachine",
 	"paths" : 
 	{
 		"build" : ".",

@@ -226,17 +226,17 @@ public:
         fetchingPCIR();
         // output
         ALU alu;
-        int mi0 = alu.hextodec(memory[0]);
+        char mi0 = alu.hextodec(mm->getState().first.getCell(0));
         QString m0 = "";
-        if( mi0 >= 32 && mi0 <= 125){
-            m0 = QString::fromStdString(""+alu.hextodec(memory[0]));
+        if( mi0 >= ' ' && mi0 <= '}'){
+            m0 = QString::fromStdString(""+mi0);
         }
-        int mi1 = alu.hextodec(memory[1]);
+        char mi1 = alu.hextodec(mm->getState().first.getCell(1));
         QString m1 = "";
-        if( mi1 >= 32 && mi1 <= 125){
-            m1 = QString::fromStdString(""+alu.hextodec(memory[1]));
+        if( mi1 >= ' ' && mi1 <= '}'){
+            m1 = QString::fromStdString(" "+mi1);
         }
-        cout << m0.toStdString() << ' ' << m1.toStdString() << '\n';
+        cout << " "+mi1 << ' ' << " " + mi0  << '\n';
         if(!m0.isSimpleText()) m0 = "";
         if(!m1.isSimpleText()) m1 = "";
         output->setText(m0+" "+m1);

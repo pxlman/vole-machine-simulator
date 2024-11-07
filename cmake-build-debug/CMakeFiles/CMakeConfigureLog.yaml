@@ -4,20 +4,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt"
     message: |
-      The system is: Windows - 10.0.19045 - AMD64
+      The system is: Linux - 6.6.44 - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/gcc.exe 
+      Compiler: /home/pxlman/.nix-profile/bin/cc 
       Build flags: 
       Id flags:  
       
@@ -25,21 +25,21 @@ events:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.exe
+        /home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/g++.exe 
+      Compiler: /home/pxlman/.nix-profile/bin/c++ 
       Build flags: 
       Id flags:  
       
@@ -47,436 +47,431 @@ events:
       0
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.exe
+        /home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg"
-      binary: "C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg"
+      source: "/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-I2jkQd"
+      binary: "/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-I2jkQd"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg'
+        Change Dir: '/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-I2jkQd'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_d80ae/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d80ae.dir\\build.make CMakeFiles/cmTC_d80ae.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg'
-        Building C object CMakeFiles/cmTC_d80ae.dir/CMakeCCompilerABI.c.obj
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/ninja/linux/x64/ninja -v cmTC_4671c
+        [1/2] /home/pxlman/.nix-profile/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -c /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/gcc
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
         Thread model: posix
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\'
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_d80ae.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\user\\AppData\\Local\\Temp\\ccZcgwUO.s
-        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/'
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1 -quiet -v -idirafter /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include -idirafter /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4671c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccgls0OX.s
+        GNU C17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.20-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
-        ignoring nonexistent directory "/win/include"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "/mingw/include"
+        ignoring nonexistent directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"
+        ignoring duplicate directory "/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"
+        ignoring duplicate directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"
         #include "..." search starts here:
         #include <...> search starts here:
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed
+         /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include
         End of search list.
-        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\'
-         as -v -o CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj C:\\Users\\user\\AppData\\Local\\Temp\\ccZcgwUO.s
-        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
-        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_d80ae.exe
-        "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d80ae.dir\\link.txt --verbose=1
-        "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d80ae.dir/objects.a
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_d80ae.dir/objects.a @CMakeFiles\\cmTC_d80ae.dir\\objects1.rsp
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a -Wl,--no-whole-archive -o cmTC_d80ae.exe -Wl,--out-implib,libcmTC_d80ae.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Compiler executable checksum: 618a97ba1656f4c5acdff2459a151229
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/'
+         /nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o /tmp/ccgls0OX.s
+        GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/pxlman/.nix-profile/bin/cc  -v  -rdynamic CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -o cmTC_4671c   && :
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe
-        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
         Thread model: posix
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d80ae.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d80ae.'
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_d80ae.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a --no-whole-archive --out-implib libcmTC_d80ae.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        collect2 version 13.1.0
-        C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_d80ae.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a --no-whole-archive --out-implib libcmTC_d80ae.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d80ae.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d80ae.'
-        mingw32-make[1]: Leaving directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg'
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4671c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4671c.'
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchiwrcy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2 -o cmTC_4671c /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4671c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4671c.'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+          add: [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
         end of search list found
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/include]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/x86_64-w64-mingw32/include]
-        implicit include dirs: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/include;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/x86_64-w64-mingw32/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include] ==> [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
+        implicit include dirs: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed;/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg']
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-I2jkQd']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_d80ae/fast]
-        ignore line: [C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d80ae.dir\\build.make CMakeFiles/cmTC_d80ae.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg']
-        ignore line: [Building C object CMakeFiles/cmTC_d80ae.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/ninja/linux/x64/ninja -v cmTC_4671c]
+        ignore line: [[1/2] /home/pxlman/.nix-profile/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -c /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/gcc]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\']
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_d80ae.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\user\\AppData\\Local\\Temp\\ccZcgwUO.s]
-        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/']
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1 -quiet -v -idirafter /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include -idirafter /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4671c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccgls0OX.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.20-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
-        ignore line: [ignoring nonexistent directory "/win/include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\']
-        ignore line: [ as -v -o CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj C:\\Users\\user\\AppData\\Local\\Temp\\ccZcgwUO.s]
-        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
-        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d80ae.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_d80ae.exe]
-        ignore line: ["C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d80ae.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d80ae.dir/objects.a]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_d80ae.dir/objects.a @CMakeFiles\\cmTC_d80ae.dir\\objects1.rsp]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a -Wl --no-whole-archive -o cmTC_d80ae.exe -Wl --out-implib libcmTC_d80ae.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [Compiler executable checksum: 618a97ba1656f4c5acdff2459a151229]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/']
+        ignore line: [ /nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o /tmp/ccgls0OX.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/pxlman/.nix-profile/bin/cc  -v  -rdynamic CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -o cmTC_4671c   && :]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d80ae.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d80ae.']
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_d80ae.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a --no-whole-archive --out-implib libcmTC_d80ae.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [collect2 version 13.1.0]
-        ignore line: [C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_d80ae.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_d80ae.dir/objects.a --no-whole-archive --out-implib libcmTC_d80ae.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [GNU ld (GNU Binutils) 2.40]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d80ae.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d80ae.']
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6309bg']
-        ignore line: []
-        ignore line: []
-        linker tool for 'C': C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/ld.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4671c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4671c.']
+        link line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchiwrcy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2 -o cmTC_4671c /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cchiwrcy.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4671c] ==> ignore
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o]
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o]
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o] ==> obj [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin] ==> dir [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..]
+          arg [-dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [CMakeFiles/cmTC_4671c.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o] ==> obj [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o]
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+        collapse library dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin] ==> [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o;/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o;/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+        implicit dirs: [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0;/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib;/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib]
         implicit fwks: []
       
       
   -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    message: |
-      Running the C compiler's linker: "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.40
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn"
-      binary: "C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn"
+      source: "/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lxQjaB"
+      binary: "/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lxQjaB"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn'
+        Change Dir: '/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lxQjaB'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_75ccc/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_75ccc.dir\\build.make CMakeFiles/cmTC_75ccc.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn'
-        Building CXX object CMakeFiles/cmTC_75ccc.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/ninja/linux/x64/ninja -v cmTC_0a422
+        [1/2] /home/pxlman/.nix-profile/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
         Thread model: posix
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\'
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_75ccc.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\user\\AppData\\Local\\Temp\\ccqW1kU1.s
-        GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/'
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE -idirafter /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include -idirafter /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0a422.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cccX20NI.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.20-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
-        ignoring nonexistent directory "/win/include"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
-        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "/mingw/include"
+        ignoring nonexistent directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"
+        ignoring duplicate directory "/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"
+        ignoring duplicate directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"
         #include "..." search starts here:
         #include <...> search starts here:
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//backward
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed
+         /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include
         End of search list.
-        Compiler executable checksum: e75de627edc3c57e31324b930b15b056
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\'
-         as -v -o CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\user\\AppData\\Local\\Temp\\ccqW1kU1.s
-        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
-        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_75ccc.exe
-        "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_75ccc.dir\\link.txt --verbose=1
-        "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_75ccc.dir/objects.a
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_75ccc.dir/objects.a @CMakeFiles\\cmTC_75ccc.dir\\objects1.rsp
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a -Wl,--no-whole-archive -o cmTC_75ccc.exe -Wl,--out-implib,libcmTC_75ccc.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Compiler executable checksum: 3bbf15c542734ab5d090494c79561280
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/'
+         /nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccX20NI.s
+        GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/pxlman/.nix-profile/bin/c++  -v  -rdynamic CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0a422   && :
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE
-        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/g++
+        COLLECT_LTO_WRAPPER=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
         Thread model: posix
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75ccc.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75ccc.'
-         C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_75ccc.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a --no-whole-archive --out-implib libcmTC_75ccc.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        collect2 version 13.1.0
-        C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_75ccc.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a --no-whole-archive --out-implib libcmTC_75ccc.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75ccc.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75ccc.'
-        mingw32-make[1]: Leaving directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn'
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a422' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a422.'
+         /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNsqdpf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2 -o cmTC_0a422 /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a422' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a422.'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-          add: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//backward]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+          add: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+          add: [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
         end of search list found
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/include]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        collapse include dir [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/x86_64-w64-mingw32/include]
-        implicit include dirs: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/include;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/x86_64-w64-mingw32/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/x86_64-unknown-linux-gnu]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//backward] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/backward]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+        collapse include dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include] ==> [/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
+        implicit include dirs: [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/x86_64-unknown-linux-gnu;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/backward;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed;/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn']
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lxQjaB']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_75ccc/fast]
-        ignore line: [C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_75ccc.dir\\build.make CMakeFiles/cmTC_75ccc.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn']
-        ignore line: [Building CXX object CMakeFiles/cmTC_75ccc.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/ninja/linux/x64/ninja -v cmTC_0a422]
+        ignore line: [[1/2] /home/pxlman/.nix-profile/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\']
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_75ccc.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\user\\AppData\\Local\\Temp\\ccqW1kU1.s]
-        ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/']
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE -idirafter /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include -idirafter /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed /nix/store/mrg9i7nvk9liwr1jzppzz3gjx5wqnga1-clion-2024.1.3/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0a422.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cccX20NI.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.20-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
-        ignore line: [ignoring nonexistent directory "/win/include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0/]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include/c++/13.2.0//backward]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/include]
+        ignore line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\']
-        ignore line: [ as -v -o CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\user\\AppData\\Local\\Temp\\ccqW1kU1.s]
-        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
-        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_75ccc.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_75ccc.exe]
-        ignore line: ["C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_75ccc.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_75ccc.dir/objects.a]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_75ccc.dir/objects.a @CMakeFiles\\cmTC_75ccc.dir\\objects1.rsp]
-        ignore line: [C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a -Wl --no-whole-archive -o cmTC_75ccc.exe -Wl --out-implib libcmTC_75ccc.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [Compiler executable checksum: 3bbf15c542734ab5d090494c79561280]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/']
+        ignore line: [ /nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccX20NI.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/pxlman/.nix-profile/bin/c++  -v  -rdynamic CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0a422   && :]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE]
-        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [COLLECT_GCC=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.39-52-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75ccc.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75ccc.']
-        ignore line: [ C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_75ccc.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a --no-whole-archive --out-implib libcmTC_75ccc.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [collect2 version 13.1.0]
-        ignore line: [C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_75ccc.exe C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_75ccc.dir/objects.a --no-whole-archive --out-implib libcmTC_75ccc.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [GNU ld (GNU Binutils) 2.40]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75ccc.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75ccc.']
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/user/Desktop/Vole/vole-machine-simulator/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kwzznn']
-        ignore line: []
-        ignore line: []
-        linker tool for 'CXX': C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/ld.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/:/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib/:/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a422' '-B' '/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/' '-idirafter' '/nix/store/rzs2mn1lv3dsiyilygfz9vv1p8r36jvn-glibc-2.39-52-dev/include' '-idirafter' '/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-B' '/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin/' '-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib' '-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a422.']
+        link line: [ /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNsqdpf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2 -o cmTC_0a422 /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib -L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib -L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNsqdpf.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0a422] ==> ignore
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o]
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o]
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o] ==> obj [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+          arg [-L/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin] ==> dir [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..]
+          arg [-dynamic-linker=/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [CMakeFiles/cmTC_0a422.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o] ==> obj [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o]
+          arg [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o] ==> obj [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+        collapse library dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib] ==> [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib]
+        collapse library dir [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib] ==> [/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin] ==> [/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64]
+        collapse library dir [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> [/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crt1.o;/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crti.o;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o;/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib/crtn.o]
+        implicit dirs: [/nix/store/87848rvrg5c7jmplpi0iapvbxyj9kfid-glibc-2.39-52/lib;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0;/nix/store/40yjzm7r5ki59kkk9423dnwbm86x7pyd-gcc-13.2.0-lib/lib;/nix/store/q6afjcz9h6ybcrai8w4z4k6ld7yqi9nd-gcc-wrapper-13.2.0/bin;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib64;/nix/store/fg7ass3a5m5pgl26qzfdniicbwbgzccy-gcc-13.2.0/lib]
         implicit fwks: []
       
       
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    message: |
-      Running the CXX compiler's linker: "C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.40
 ...
