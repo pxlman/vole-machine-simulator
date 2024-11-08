@@ -1,6 +1,6 @@
 # ZMO - An interactive vole machine simulator made with C++ Qt6
 
-![](./screenshot.png)
+<img src="./screenshot.png" width="200" height="200">
 
 youtube link showing the software: [Youtube video](https://youtu.be/WWo3SEs9rvE?si=DQyLCjWW8ydqhpBp)
 
