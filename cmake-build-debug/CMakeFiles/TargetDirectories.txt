@@ -1,3 +1,0 @@
-/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/volemachine.dir
-/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pxlman/Documents/OOP/vole/cmake-build-debug/CMakeFiles/rebuild_cache.dir
