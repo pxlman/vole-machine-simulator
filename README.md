@@ -1,8 +1,11 @@
 # ZMO - An interactive vole machine simulator made with C++ Qt6
+A vole machine is a small machine that's made for educational purposes to help students understand how the computer works and how the instructions are executed. The machine has 256 memory cells and 16 registers. The machine has 13 instructions that it can execute. The machine has a program counter that points to the current instruction that’s about to be executed. The machine has an instruction register that holds the current instruction that’s about
 
 <img src="./screenshot.png" height="350">
 
-youtube link showing the software: [Youtube video](https://youtu.be/WWo3SEs9rvE?si=DQyLCjWW8ydqhpBp)
+Youtube link showing the software: [Youtube video](https://youtu.be/WWo3SEs9rvE?si=DQyLCjWW8ydqhpBp)
+
+A site that shows how the vole machine works in the help there: [site](https://brookshear.jfagerberg.me)
 
 # Avaliability
 The software currently working on linux only
