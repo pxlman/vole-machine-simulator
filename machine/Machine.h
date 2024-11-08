@@ -99,6 +99,7 @@ public:
         cpu.fetch();
         vector<int> instructionVector = cpu.decode();
         cpu.execute(instructionVector);
+        cpu.fetch();
     }
     void undo(){
         memory = past_memory.at(past_memory.size()-1);

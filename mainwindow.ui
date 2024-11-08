@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>950</width>
-    <height>700</height>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -151,7 +151,7 @@
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>180</y>
+      <y>136</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -178,7 +178,7 @@
     <property name="geometry">
      <rect>
       <x>840</x>
-      <y>624</y>
+      <y>580</y>
       <width>91</width>
       <height>51</height>
      </rect>
@@ -250,8 +250,8 @@
    <widget class="QTableWidget" name="registerTable">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>220</y>
+      <x>220</x>
+      <y>180</y>
       <width>161</width>
       <height>461</height>
      </rect>
@@ -416,145 +416,6 @@
      </property>
     </item>
    </widget>
-   <widget class="QTableWidget" name="memoryTable">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>270</y>
-      <width>121</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>GoMono Nerd Font</family>
-      <pointsize>12</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
-    </property>
-    <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
-    </property>
-    <property name="autoScroll">
-     <bool>true</bool>
-    </property>
-    <property name="editTriggers">
-     <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
-    </property>
-    <property name="tabKeyNavigation">
-     <bool>false</bool>
-    </property>
-    <property name="alternatingRowColors">
-     <bool>false</bool>
-    </property>
-    <property name="selectionMode">
-     <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
-    </property>
-    <property name="selectionBehavior">
-     <enum>QAbstractItemView::SelectionBehavior::SelectItems</enum>
-    </property>
-    <property name="gridStyle">
-     <enum>Qt::PenStyle::DashDotLine</enum>
-    </property>
-    <property name="rowCount">
-     <number>9</number>
-    </property>
-    <property name="columnCount">
-     <number>17</number>
-    </property>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="horizontalHeaderCascadingSectionResizes">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>30</number>
-    </attribute>
-    <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>65</number>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>40</number>
-    </attribute>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <item row="1" column="1">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="font">
-      <font>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="background">
-      <brush brushstyle="NoBrush">
-       <color alpha="255">
-        <red>224</red>
-        <green>222</green>
-        <blue>244</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-    <item row="2" column="1">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="background">
-      <brush brushstyle="NoBrush">
-       <color alpha="255">
-        <red>224</red>
-        <green>222</green>
-        <blue>244</blue>
-       </color>
-      </brush>
-     </property>
-     <property name="foreground">
-      <brush brushstyle="NoBrush">
-       <color alpha="255">
-        <red>224</red>
-        <green>222</green>
-        <blue>244</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-   </widget>
    <widget class="QLabel" name="errorLabel">
     <property name="geometry">
      <rect>
@@ -580,9 +441,9 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>120</y>
-      <width>371</width>
-      <height>66</height>
+      <y>90</y>
+      <width>361</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -653,10 +514,10 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>90</y>
       <width>181</width>
-      <height>131</height>
+      <height>108</height>
      </rect>
     </property>
     <property name="font">
@@ -810,9 +671,9 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>220</y>
-      <width>431</width>
+      <x>390</x>
+      <y>176</y>
+      <width>421</width>
       <height>32</height>
      </rect>
     </property>
@@ -900,7 +761,7 @@
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>130</y>
+      <y>86</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -925,8 +786,8 @@
    <widget class="QTableWidget" name="memoryTable_2">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>260</y>
+      <x>390</x>
+      <y>220</y>
       <width>291</width>
       <height>421</height>
      </rect>
@@ -1236,7 +1097,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>624</y>
+      <y>580</y>
       <width>91</width>
       <height>51</height>
      </rect>
@@ -1271,12 +1132,12 @@
    </widget>
    <widget class="QTextEdit" name="guidanceBox">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>394</y>
+      <y>350</y>
       <width>241</width>
       <height>211</height>
      </rect>
@@ -1311,7 +1172,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>630</y>
+      <y>586</y>
       <width>91</width>
       <height>51</height>
      </rect>
@@ -1348,7 +1209,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>370</y>
+      <y>326</y>
       <width>101</width>
       <height>20</height>
      </rect>
@@ -1368,7 +1229,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="geometry">
      <rect>
       <x>810</x>
-      <y>250</y>
+      <y>206</y>
       <width>131</width>
       <height>151</height>
      </rect>
@@ -1389,10 +1250,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QLabel" name="bmo_face">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>270</y>
-      <width>181</width>
-      <height>111</height>
+      <x>10</x>
+      <y>190</y>
+      <width>201</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -1409,6 +1270,79 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OpenDyslexic Nerd Font</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Instructions:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="guidanceBox_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>201</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>GeistMono Nerd Font</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::FocusPolicy::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>Your guide to understand the current instruction at which the program counter</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'GeistMono Nerd Font'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1 RXY MtR&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2 RXY VtR&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3 RXY RtM&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4 xRS RtS&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5 RST R=S+T&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6 RST R=S+T&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7 RST R=SvT&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8 RST R=S∧T&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;9 RST R=S⊕T&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A RxX rotate R by X&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;B RXY if R==R0 jump to XY&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;C xxx Halt execution.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;D RXY if R&amp;gt;R0 jump to XY&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>

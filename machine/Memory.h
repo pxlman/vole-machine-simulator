@@ -15,7 +15,7 @@ private:
 public:
     Memory() {
         vector<string> m(256, "00");
-        lastInserted = 1; // Memory 0 is let for run, and we mustn't mess with it
+        lastInserted = 5; // Memory 0 is let for run, and we mustn't mess with it
         mem = m;
     }
     void setCell(int address, string val) {
@@ -89,7 +89,7 @@ private:
     int counter;
 public:
     PC() {
-        counter = 2;
+        counter = 6;
     }
 
     void set(int c) {

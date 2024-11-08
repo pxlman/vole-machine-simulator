@@ -9,7 +9,6 @@
 #include <QDebug>
 class UiF {
 private:
-    QTableWidget *memory_table;
     QTableWidget *memory_table2;
     QTableWidget *reg_table;
     Machine *mm;
@@ -23,8 +22,7 @@ private:
 public:
     UiF(){
     }
-    void setTables(QTableWidget *r_table, QTableWidget *m_table){
-        memory_table = m_table;
+    void setTables(QTableWidget *r_table){
         reg_table = r_table;
     }
     void setTable2(QTableWidget *m_table){
@@ -76,86 +74,6 @@ public:
             table->setItem(i, 1, item);
         }
     }
-    void fetchingMemoryTable(vector<string> memory){
-        QTableWidget *table = memory_table;
-        QString hex = "0123456789ABCDEF";
-        // Columns
-        for (int i = 1; i <= 16; i++) {
-            QString form = QString(hex[i-1]);
-            auto *item = new QTableWidgetItem(form);
-            item -> setTextAlignment(Qt::AlignBottom + Qt::AlignRight);
-            table->setItem(0, i, item);
-        }
-        // Rows
-        for (int i = 1; i <= 16; i++) {
-            QString form = QString(hex[i-1]);
-            auto *item = new QTableWidgetItem(form);
-            item -> setTextAlignment(Qt::AlignRight + Qt::AlignCenter);
-            table->setItem(i, 0, item);
-        }
-        // Data from vector
-        for (int i = 1; i <= 16; i++) { // the table is 1 based index
-            for (int j = 1; j <= 16; j++) {
-                int index = (i-1) * 16 + (j-1); // the vector is 0 based
-                QString cell = QString::fromStdString(memory[index]);
-                auto *item = new QTableWidgetItem(cell);
-                item -> setTextAlignment(Qt::AlignCenter);
-                if(index == mm->getPC()){
-                    item->setBackground(QBrush("#d7827e"));
-                    item->setForeground(QBrush("#21202e"));
-                }
-                if(i == 1 && (j == 1 || j == 2)){
-                    item->setBackground(QBrush("#e0def4"));
-                    item->setForeground(QBrush("#21202e"));
-                }
-                table->setItem(j, i, item);
-            }
-        }
-    }
-    void fetchingMemoryTableV2(vector<string> memory){
-        QTableWidget *table = memory_table;
-        QString hex = "0123456789ABCDEF";
-        // Columns header
-        for (int i = 1; i <= 16; i++) {
-            QString form = QString(hex[i-1]);
-            auto *item = new QTableWidgetItem(form);
-            item -> setTextAlignment(Qt::AlignBottom + Qt::AlignRight);
-            table->setItem(0, i, item);
-        }
-        // Rows header
-        for (int i = 1; i <= 16; i+=2) {
-            int c = (i-1)/2;
-            QString form = QString(hex[i-1]) + "|" + QString(hex[i]);
-            auto *item = new QTableWidgetItem(form);
-            item -> setTextAlignment(Qt::AlignRight + Qt::AlignCenter);
-            table->setItem(c+1, 0, item);
-        }
-        // Data from vector
-        for (int i = 1; i <= 16; i++) { // the table is 1 based index
-            for (int j = 1; j <= 16; j+=2) {
-                int index = (i-1) * 16 + j - 1; // the vector is 0 based
-                QString cell = QString::fromStdString(memory[index]) + "|" +
-                               QString::fromStdString(memory[index+1]);
-                auto *item = new QTableWidgetItem(cell);
-                item -> setTextAlignment(Qt::AlignCenter);
-                // Program counter
-                if(index == mm->getPC()){
-                    item->setBackground(QBrush("#c4a7e7"));
-                    item->setForeground(QBrush("#21202e"));
-                }
-                if(index >= 254 && mm->getPC() >= 254){
-                    item->setBackground(QBrush("#191724"));
-                    item->setForeground(QBrush("#faf4ed"));
-                }
-                // Output cells
-                if(i == 1 && (j == 1)){
-                    item->setBackground(QBrush("#6e6a86"));
-                    item->setForeground(QBrush("#faf4ed"));
-                }
-                table->setItem((j-1)/2 + 1, i, item);
-            }
-        }
-    }
     void fetchingMemoryTableV3(vector<string> memory){
         QTableWidget *table = memory_table2;
         ALU alu = ALU();
@@ -190,7 +108,7 @@ public:
                 item3->setForeground(QBrush("#faf4ed"));
             }
             // Output cells
-            if(i == 0){
+            if(i <= 5){
                 item2->setBackground(QBrush("#6e6a86"));
                 item3->setBackground(QBrush("#6e6a86"));
                 item2->setForeground(QBrush("#faf4ed"));
@@ -213,6 +131,20 @@ public:
         string ir = machine.getIR();
         IRLabel->setText(QString::fromStdString(ir));
     }
+    void fetchOutput(){
+        // output
+        ALU alu;
+        string outputStr = "";
+        for (int i = 0; i < 6; ++i) {
+            char mi = alu.hextodec(mm->getState().first.getCell(i));
+            string str = "";
+            if( mi >= ' ' && mi <= '}'){
+                str += mi;
+            }
+            outputStr += str;
+        }
+        output->setText(QString::fromStdString(outputStr));
+    }
     void refreshTables(){
         Machine machine = *mm;
         // Memory
@@ -224,22 +156,6 @@ public:
         fetchingRegisterTable(reg);
         // PC and IR
         fetchingPCIR();
-        // output
-        ALU alu;
-        char mi0 = alu.hextodec(mm->getState().first.getCell(0));
-        QString m0 = "";
-        if( mi0 >= ' ' && mi0 <= '}'){
-            m0 = QString::fromStdString(""+mi0);
-        }
-        char mi1 = alu.hextodec(mm->getState().first.getCell(1));
-        QString m1 = "";
-        if( mi1 >= ' ' && mi1 <= '}'){
-            m1 = QString::fromStdString(" "+mi1);
-        }
-        cout << " "+mi1 << ' ' << " " + mi0  << '\n';
-        if(!m0.isSimpleText()) m0 = "";
-        if(!m1.isSimpleText()) m1 = "";
-        output->setText(m0+" "+m1);
         if(machine.getPC() <= 14){
             memory_table2->scrollToItem(memory_table2->item(0 ,0));
         } else {
@@ -247,6 +163,7 @@ public:
         }
         if(mm->getPC() <= 2) undoBtn->setDisabled(true);
         else undoBtn->setEnabled(true);
+        fetchOutput();
     }
 };
 

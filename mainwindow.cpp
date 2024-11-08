@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this); // Default, don't touch it
 
     // Setting tables to UI functions
-    uif.setTables(ui->registerTable, ui->memoryTable);
+    uif.setTables(ui->registerTable);
     uif.setTable2(ui->memoryTable_2);
     uif.setErrorLabel(ui->errorLabel);
     uif.setMachine(&machine);
@@ -37,9 +37,8 @@ MainWindow::MainWindow(QWidget *parent)
     uif.setSpeedSlider(ui->speedSlider);
     uif.setUndoBtn(ui->stepBackBtn);
     uif.refreshTables();
-    ui->memoryTable->hide();
     ui->errorLabel->setText("");
-
+    uif.fetchOutput();
     // Timer for running speed
     connect(timer, &QTimer::timeout, this, &MainWindow::on_singleStepBtn_clicked);
     connect(ui->runBtn, &QPushButton::clicked, this, &MainWindow::on_running);
