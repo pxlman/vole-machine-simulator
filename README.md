@@ -42,4 +42,4 @@ make
 - The memory table highlight the screen cells.
 - You can go forward or backward in running the application.
 
-Give it a try 
+Give it a try 😇
